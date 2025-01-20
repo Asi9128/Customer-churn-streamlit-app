@@ -19,7 +19,7 @@ def login_form():
     password = st.text_input("Password", type="password")
 
     if st.button("Login"):
-        if username == "admin" and password == "admin":
+        if username == "" and password == "":
             st.session_state['authentication_status'] = True
             st.toast("Login Successfull", icon="✅")
             
